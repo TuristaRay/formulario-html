@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Formulários </title>
+	<style type="text/css">
+		div {
+			background-color: #FFE4E1;
+		}
+		body {
+			background-color:#FF1493;
+			color:black;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		  <h2> Formulário </h2>
+	</header>
+	<section>
+		<div>
+		<fieldset>
+			<br>
+  		<input type="button" onclick="alert('Olá Mundo!')" value="Clique aqui!">
+  		<br>
+		<form>
+			
+ 			<label for="fname"> Nome: </label><br>
+            <input type="text" id="fname" name="fname"placeholder="digite seu nome aqui"style="color:black;"><br>
+ 			<label for="lname"> Sobrenome: </label><br></li>
+  			<input type="text" id="lname" name="lname"placeholder="digite seu sobrenome aqui"  style="color:black;"> 
+  		  
+		</form>
+		<form action="/action_page.php">
+		
+  		<label for="email"> Digite o seu Email: </label> <br>
+  			<input type="email" id="email" name="email"placeholder="digite seu email aqui"  style="color:black;"><br>
+  		    
+		</form>
+		<form action="/action_page.php">
+			
+  			<label for="phone"> Insira um número de telefone: </label><br>
+ 			<input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required style="color:black;" >
+ 		   
+		</form>
+		<form action="/action_page.php"><br>
+		
+  		<label for="sexo"> Selecione o seu sexo? </label>
+  			<select id="sexo" name="sexo"  style="color:black;">
+    		<option value="Feminino"> Feminino </option>
+    		<option value="Masculino"> Masculino </option>
+    		<option value="Não-Binário"> Não-Binário </option>
+    		<option value="Outros"> Outros </option>
+  			</select>
+  		   
+		</form>
+		<br>
+		<form action="/action_page.php"  style="color:black;">
+			
+  			<li><label for="birthday"> Data do seu Aniversário: </label>
+  		    <input type="date" id="birthday" name="birthday"  style="color: black;"></form>
+  		  
+		</form>
+		<form action="/action_page.php">
+		
+  			<label for="quantity"> Quantos irmãos você tem? </label>
+  			<p><input type="number" id="quantity" name="quantity" min="0" max="10"  style="color:black;"></p>
+  		    
+  			</form>
+  			
+			 <p>Selecione a sua Orientação Sexual?</p>
+		
+		<form action="/action_page.php">
+  			<input list="browsers" name="browser"  style="color:black;">
+  			<datalist id="browsers">
+    		<option value="Heterossexual">
+   			<option value="Homossexual">
+    		<option value="Bissexual">
+    		<option value="Pansexual">
+    		<option value="Assexual">
+    		<option value="Outros">
+  			</datalist><br>
+		</form>
+		<form>
+		
+			 <p>Selecione qual a sua Nacionalidade? </p>
+  			<input type="checkbox" id="vehicle1" name="vehicle1" value="Brasileiro">
+  			<label for="vehicle1"> Brasileiro </label><br>
+  			<input type="checkbox" id="vehicle2" name="vehicle2" value="Norte-Americano">
+  			<label for="vehicle2"> Norte-Americano </label><br>
+  			<input type="checkbox" id="vehicle3" name="vehicle3" value="Outra">
+  			<label for="vehicle3"> Outra </label>
+  		   
+		</form>
+		<form action="/action_page.php">
+			
+  			><label for="favcolor"> Selecione sua cor Favorita: </label>
+  			<p><input type="color"id="favcolor"name="favcolor"placeholder="digite sua cor aqui"value="black"></p>
+  		  
+		</form>
+		<form>
+			<p> Selecione qual curso deseja fazer? </p>
+  			<input type="radio" id="Administração" name="fav_language" value="Administração">
+  			<label for="Administração"> Administração </label><br>
+  			<input type="radio" id="Enfermagem" name="fav_language" value="Enfermagem">
+  			<label for="Enfermagem"> Enfermagem </label><br>
+  			<input type="radio" id="Informática" name="fav_language" value="Informática">
+  			<label for="Informática"> Informática </label>
+  		  
+		</form>
+		<br>
+		<form>
+			<label for="cars">Escolha um carro:</label>
+			<select id="cars" name="cars" size="3">
+  				<option value="volvo">Volvo</option>
+  				<option value="saab">Saab</option>
+  				<option value="fiat">Fiat</option>
+  				<option value="audi">Audi</option>
+			</select>
+		</form>
+		<br>
+		<p> Calendário </p>
+		<input type="date">
+		<br>
+		<p> Hora </p>
+		<input type="time">
+		<br>
+		<br>
+		<label for="myfile">Selecione:</label>
+		<br>
+  		<input type="file" id="myfile" name="myfile">
+		<br>
+		<br>
+		<label for="homepage">Adicione sua página:</label>
+ 		<input type="url" id="homepage" name="homepage">
+ 		<br>
+ 		<br>
+ 		<label for="vol">Volume (De 0 á 50):</label>
+  		<input type="range" id="vol" name="vol" min="0" max="50">
+  		<br>
+  		<br>
+  		<p> Qual o seu veiculo? </p>
+  		<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  		<label for="vehicle1"> Eu tenho uma bike </label><br>
+ 		<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+ 		<label for="vehicle2"> Eu tenho um carro </label><br>
+ 		<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+ 		<label for="vehicle3"> Eu tenho um barco </label>
+ 		<br>
+ 		<br>
+ 		<p> Mora com quem? </p>
+ 		<input type="radio" id="html" name="fav_language" value="familia">
+        <label for="mãe">Com a minha familia</label><br>
+        <input type="radio" id="css" name="fav_language" value="amigo">
+        <label for="css">Com o meu amigo(a)</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="sozinho">
+        <label for="javascript">Sozinho(a)</label>
+        <br>
+        <br>
+        <label for="datemax">Insira uma data antes de 21-10-1980:</label>
+  		<input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02">
+        <br>
+		<textarea name="message" rows="5" cols="50"  style="color:black;">
+Diga o que esse formulário lhe proporcionou.
+		</textarea>
+		</fieldset>
+		<br>
+		</div>
+	</section>
+	<footer>
+		  <b>EEEP Amélia Figueiredo &copy; 
+	</footer>
+</body>
+</html>
